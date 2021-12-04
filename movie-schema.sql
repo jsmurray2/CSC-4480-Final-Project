@@ -58,11 +58,3 @@ CREATE TABLE PRODUCES (
     foreign key (Studio_name) references PRODUCTION_STUDIO(Name),
     foreign key (Movie_id) references MOVIE(movie_id)
 );
-    
-    
-    
-
-
-
-    
-    
