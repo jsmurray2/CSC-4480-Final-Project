@@ -23,7 +23,6 @@ CREATE TABLE ACTOR (
 );
 
 CREATE TABLE STARS_IN (
-    Award    Char(50),
     Role     VarChar(50)   not null,
     ActorID  Int           not null,
     MovieID  Int           not null,
@@ -41,7 +40,6 @@ CREATE TABLE DIRECTOR (
 CREATE TABLE DIRECTS (
     DirectorID  Int        not null,
     MovieID     Int        not null,
-    Award       Char(50),
     foreign key (DirectorID) references DIRECTOR(DirectorID),
     foreign key (MovieID) references MOVIE(movie_id)
 );
