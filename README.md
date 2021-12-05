@@ -11,7 +11,7 @@ Build a database containing movies. Users will be able to query the database to 
 	- Every person must have a birthdate
 
 ## ER Diagram
-/images/ER_Diagram.png
+![ER Diagram](/images/ER_Diagram.png)
 
 ## Schema
-/images/Schema.png
+![Schema](/images/Schema.png)
