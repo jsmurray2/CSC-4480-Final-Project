@@ -2,7 +2,7 @@
 ## Brief Project Summary:
 Build a database containing movies. Users will be able to query the database to get information including listing movies with a particular actor or director, movies released years, or of a particular rating and more.
 
-## Tentative Business Rules and Restrictions:
+## Business Rules and Restrictions:
 	- At least one director
 	- Must have a release year
 	- Must have at least one genre
