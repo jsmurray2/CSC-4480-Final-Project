@@ -7,7 +7,7 @@ DROP TABLE PRODUCTION_STUDIO CASCADE CONSTRAINTS;
 DROP TABLE PRODUCES CASCADE CONSTRAINTS;
 CREATE TABLE MOVIE (
     movie_id          Int           not null,
-    Title             VarChar(50)   not null,
+    Title             VarChar(100)   not null,
     Genre             Char(20)      not null,
     Rating            Number,
     ReleaseDate       VarChar(10)   not null,
