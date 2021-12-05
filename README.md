@@ -10,8 +10,11 @@ Build a database containing movies. Users will be able to query the database to 
 	- Rating must be between 0 and 5
 	- Every person must have a birthdate
 
-## ER Diagram
+## ER Diagram:
 ![ER Diagram](/images/ER_Diagram.png)
 
-## Schema
+## Schema:
 ![Schema](/images/Schema.png)
+
+## How to use this database:
+To use this database you must have access to an Oracle Database, for this project we are using one hosted by Villanova's CSC department. [Oracle SQL Developer](https://www.oracle.com/tools/downloads/sqldev-downloads.html) is used to interact with this database. To initialize the database, first import movie-schema.sql and run it. If you make a mistake and want to reset the database, uncomment the drop table commands at the beginning of the file and rerun it.
