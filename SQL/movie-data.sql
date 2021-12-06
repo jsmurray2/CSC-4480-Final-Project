@@ -1,4 +1,5 @@
 -- Generates data for Movie Database
+
 insert into movie values
 (1, 'Star Wars: Episode IV - A New Hope', 'Sci-Fi', 10, '1977');
 
@@ -47,6 +48,9 @@ INSERT INTO MOVIE VALUES
   INSERT INTO MOVIE VALUES 
  (16, '2001: A Space Odyssey', 'Sci-Fi', 8.3, '1968');
  
+insert into movie values
+(17, 'Wolf of Wall Street', 'Comedy', 8, '2013');
+  
 -- Actors
 --------------------------------------------------
 insert into actor values
@@ -118,6 +122,8 @@ INSERT INTO ACTOR VALUES
 INSERT INTO ACTOR VALUES
 (23, 'Keir Dullea', '1936-05-30');
 
+INSERT INTO ACTOR VALUES
+(24, 'Jonah Hill', '1983-12-20');
 
 
 -- Stars In
@@ -233,6 +239,11 @@ INSERT INTO STARS_IN VALUES
 INSERT INTO STARS_IN VALUES
 ('David Bowman', 23, 16);
 
+INSERT INTO STARS_IN VALUES
+('Jordan Belfort', 11, 17);
+
+INSERT INTO STARS_IN VALUES
+('Donnie Azoff', 24, 17);
 
 
 -- Director
@@ -263,6 +274,9 @@ insert into director values
 
 insert into director values
 (9, 'Jay Roach', '1957-06-14');
+
+insert into director values
+(10, 'Martin Scorsese', '1942-11-17');
 
 -- Directs
 --------------------------------------------------
@@ -313,6 +327,9 @@ insert into directs values
 
 insert into directs values
 (9, 15);
+
+insert into directs values
+(10, 17);
 -- Production Studio
 --------------------------------------------------
 insert into production_studio values
