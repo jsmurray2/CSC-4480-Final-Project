@@ -18,3 +18,17 @@ Build a database containing movies. Users will be able to query the database to 
 
 ## How to use this database:
 To use this database you must have access to an Oracle Database, for this project we are using one hosted by Villanova's CSC department. [Oracle SQL Developer](https://www.oracle.com/tools/downloads/sqldev-downloads.html) is used to interact with this database. To initialize the database, first import movie-schema.sql and movie-data.sql and run them in that order. If you make a mistake and want to reset the database, rerun these files.
+
+## Tables
+
+### Movie Table
+![Movie Table](/images/Movie_Table.png)
+
+### Actor Table
+![Actor Table](/images/Actor_Table.png)
+
+### Director Table
+![Director Table](/images/Director_Table.png)
+
+### Production Studio Table
+![Production Studio Table](/images/Production_Studio_Table.png)
