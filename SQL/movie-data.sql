@@ -117,8 +117,6 @@ INSERT INTO ACTOR VALUES
 INSERT INTO ACTOR VALUES
 (23, 'Keir Dullea', '1936-05-30');
 
-
-
 -- Stars In
 --------------------------------------------------
 insert into stars_in values
@@ -232,8 +230,6 @@ INSERT INTO STARS_IN VALUES
 INSERT INTO STARS_IN VALUES
 ('David Bowman', 23, 16);
 
-
-
 -- Director
 --------------------------------------------------
 insert into director values
@@ -247,6 +243,7 @@ insert into director values
 
 insert into director values
 (4, 'Stephen Spielberg', '1946-12-18');
+
 -- Directs
 --------------------------------------------------
 insert into directs values
