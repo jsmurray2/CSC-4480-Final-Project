@@ -1,3 +1,4 @@
+-- Generates data for Movie Database
 insert into movie values
 (1, 'Star Wars: Episode IV - A New Hope', 'Sci-Fi', 10, '1977');
 
