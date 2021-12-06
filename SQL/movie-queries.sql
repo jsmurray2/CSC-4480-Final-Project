@@ -66,3 +66,11 @@ WHERE DOB =
     SELECT MAX(DOB)
     FROM DIRECTOR
 );
+
+-- SELECT ALL ACTORS WHO ACTED IN A MOVIE
+-- PRODUCED BY A STUDIO WHERE STANLEY KUBRICK WAS PRESIDENT
+SELECT a.name
+FROM (((ACTOR a JOIN STARS_IN s on a.actorid = s.actorid) join produces p on s.movieid = p.movie_id)
+JOIN production_studio d on d.name = p.studio_name)
+WHERE d.president = 'Stanley Kubrick'
+order by name asc;
