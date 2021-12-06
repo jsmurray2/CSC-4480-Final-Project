@@ -32,3 +32,79 @@ To use this database you must have access to an Oracle Database, for this projec
 
 ### Production Studio Table
 ![Production Studio Table](/images/Production_Studio_Table.png)
+
+## Queries
+
+### Simple Query
+Find all drama films released after the turn of the century:
+'''
+SELECT * FROM MOVIE WHERE GENRE = 'Drama' and ReleaseDate >= 2000
+ORDER BY RELEASEDATE;
+'''
+![Simple Query](/images/Simple_Query.png)
+
+### DISTINCT Operator Query
+List all studio names in the database
+'''
+SELECT DISTINCT Studio_name FROM PRODUCES
+ORDER BY Studio_name;
+'''
+![DISTINCT Operator Example](/images/DISTINCT_Operator_Query.png)
+
+### IN STatement Query
+List all movies with a specific actor
+'''
+SELECT TITLE FROM MOVIE
+WHERE MOVIE_ID IN 
+(
+    SELECT MOVIEID FROM STARS_IN
+    WHERE ACTORID IN 
+    (
+        SELECT ACTORID FROM ACTOR WHERE NAME = 'Christian Bale'
+    )
+)
+ORDER BY TITLE;
+'''
+![IN Statement Query](/images/IN_Statement_Query.png)
+
+### LIKE Operator Query
+List all production studios located in California
+'''
+SELECT NAME FROM PRODUCTION_STUDIO
+WHERE ADDRESS LIKE '%California';
+'''
+![LIKE Operator Query](/images/LIKE_Operator_Query.png)
+
+### COUNT Operator Query
+List number of movies in each genre
+'''
+SELECT GENRE,
+COUNT(*)
+FROM MOVIE
+GROUP BY GENRE;
+'''
+![COUNT Operator Query](/images/COUNT_Operator_Query.png)
+
+### MIN/MAX Operator Query
+Find the oldest actor in the database
+'''
+SELECT NAME AS Oldest_Actor, DOB
+FROM ACTOR
+WHERE DOB = 
+(
+    SELECT MIN(DOB)
+    FROM ACTOR
+);
+'''
+![MIN/MAX Operator Query](/images/MIN_MAX_Operator_Query.png)
+
+### JOIN Query
+Find all actors that acted in a movie that was produced by a studio where Stanley Kubrick was President
+'''
+SELECT a.name
+FROM (((ACTOR a JOIN STARS_IN s on a.actorid = s.actorid) join produces p on s.movieid = p.movie_id)
+JOIN production_studio d on d.name = p.studio_name)
+WHERE d.president = 'Stanley Kubrick'
+order by name asc;
+'''
+![JOIN Query](/images/JOIN_Query.png)
