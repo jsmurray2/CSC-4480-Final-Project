@@ -3,8 +3,15 @@
 -- Query for top rated Sci-Fi films
 SELECT * FROM MOVIE WHERE GENRE = 'Sci-Fi' and Rating >= 9;
 
+-- Query for top rated Drama films
+SELECT * FROM MOVIE WHERE GENRE = 'Drama' and Rating >= 9;
+
 -- Query for Drama films released after the turn of the century
 SELECT * FROM MOVIE WHERE GENRE = 'Drama' and ReleaseDate >= 2000
+ORDER BY RELEASEDATE;
+
+-- Query for Drama films released before the turn of the century
+SELECT * FROM MOVIE WHERE GENRE = 'Drama' and ReleaseDate < 2000
 ORDER BY RELEASEDATE;
 
 -- List all studio names in database
