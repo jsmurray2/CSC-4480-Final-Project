@@ -46,7 +46,7 @@ CREATE TABLE DIRECTS (
 
 CREATE TABLE PRODUCTION_STUDIO (
     Name        Varchar(50)     not null,
-    Address     Varchar(100)    not null,
+    Address     Varchar(100)
     President   Char(50),
     primary key(Name)
 );
