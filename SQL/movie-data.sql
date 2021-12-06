@@ -112,6 +112,82 @@ INSERT INTO ACTOR VALUES
 
 -- Stars In
 --------------------------------------------------
+INSERT INTO STARS_IN VALUES
+('Lt. Aldo Raine', 1, 7);
+
+INSERT INTO STARS_IN VALUES
+('Hans Landa', 2, 7);
+
+INSERT INTO STARS_IN VALUES
+('Dr. King Schultz', 2, 10);
+
+INSERT INTO STARS_IN VALUES
+('Mr. White', 3, 8);
+
+INSERT INTO STARS_IN VALUES
+('The Wolf', 3, 9);
+
+INSERT INTO STARS_IN VALUES
+('Mr. Orange', 4, 8);
+
+INSERT INTO STARS_IN VALUES
+('Pumpkin', 4, 9);
+
+INSERT INTO STARS_IN VALUES
+('Vincent Vega', 5, 9);
+
+INSERT INTO STARS_IN VALUES
+('Butch Coolidge', 6, 9);
+
+INSERT INTO STARS_IN VALUES
+('Django', 7, 10);
+
+INSERT INTO STARS_IN VALUES
+('Calvin Candie', 8, 10);
+
+INSERT INTO STARS_IN VALUES
+('Narrator', 9, 7);
+
+INSERT INTO STARS_IN VALUES
+('Jules Winnfield', 9, 9);
+
+INSERT INTO STARS_IN VALUES
+('Stephen', 9, 10);
+
+INSERT INTO STARS_IN VALUES
+('Gunnery Sergeant Hartman', 10, 11);
+
+INSERT INTO STARS_IN VALUES
+('Pvt. Leonard ''Gomer Pyle'' Lawrence', 11, 11);
+
+INSERT INTO STARS_IN VALUES
+('Pvt. J.T ''Joker'' Davis', 12, 11);
+
+INSERT INTO STARS_IN VALUES
+('Patrick Bateman', 13, 12);
+
+INSERT INTO STARS_IN VALUES
+('Nando Parrado', 14, 13);
+
+INSERT INTO STARS_IN VALUES
+('Liliana Methol', 15, 13);
+
+INSERT INTO STARS_IN VALUES
+('Jack Torrance', 16, 14);
+
+INSERT INTO STARS_IN VALUES
+('Wendy Torrance', 17, 14);
+
+INSERT INTO STARS_IN VALUES
+('Greg Focker', 18, 15);
+
+INSERT INTO STARS_IN VALUES
+('Jack Byrnes', 19, 15);
+
+INSERT INTO STARS_IN VALUES
+('David Bowman', 20, 16);
+
+
 
 -- Director
 --------------------------------------------------
