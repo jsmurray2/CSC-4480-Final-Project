@@ -1,1 +1,37 @@
 -- Queries for Movie Database
+
+-- Query for top rated Sci-Fi films
+SELECT * FROM MOVIE WHERE GENRE = 'Sci-Fi' and Rating >= 9;
+
+-- Query for Drama films released after the turn of the century
+SELECT * FROM MOVIE WHERE GENRE = 'Drama' and ReleaseDate >= 2000
+ORDER BY RELEASEDATE;
+
+-- List all studio names in database
+SELECT DISTINCT Studio_name FROM PRODUCES
+ORDER BY Studio_name;
+
+-- List all movies with a specific actor
+SELECT TITLE FROM MOVIE
+WHERE MOVIE_ID IN 
+(
+    SELECT MOVIEID FROM STARS_IN
+    WHERE ACTORID IN 
+    (
+        SELECT ACTORID FROM ACTOR WHERE NAME = 'Christian Bale'
+    )
+)
+ORDER BY TITLE;
+
+-- List all movies with a specific director
+SELECT TITLE FROM MOVIE
+WHERE MOVIE_ID IN 
+(
+    SELECT MOVIEID FROM DIRECTS
+    WHERE DIRECTORID IN 
+    (
+        SELECT DIRECTORID FROM DIRECTOR WHERE NAME = 'Quentin Tarantino'
+    )
+)
+ORDER BY TITLE;
+        
