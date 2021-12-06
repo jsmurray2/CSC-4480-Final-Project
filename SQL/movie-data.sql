@@ -50,6 +50,15 @@ INSERT INTO MOVIE VALUES
  
 insert into movie values
 (17, 'Wolf of Wall Street', 'Comedy', 8, '2013');
+
+insert into movie values
+(18, 'The Green Mile', 'Drama', 9, '1999');
+
+insert into movie values
+(19, 'Shutter Island', 'Mystery', 8, '2010');
+
+insert into movie values
+(20, 'Elf', 'Comedy', 7, '2003');
   
 -- Actors
 --------------------------------------------------
@@ -124,6 +133,15 @@ INSERT INTO ACTOR VALUES
 
 INSERT INTO ACTOR VALUES
 (24, 'Jonah Hill', '1983-12-20');
+
+INSERT INTO ACTOR VALUES
+(25, 'Tom Hanks', '1957-06-09');
+
+insert into actor values
+(26, 'Mark Ruffalo', '1967-11-22');
+
+insert into actor values
+(27, 'Will Ferrell', '1967-06-16');
 
 
 -- Stars In
@@ -245,6 +263,17 @@ INSERT INTO STARS_IN VALUES
 INSERT INTO STARS_IN VALUES
 ('Donnie Azoff', 24, 17);
 
+insert into stars_in values
+('Paul Edgecomb', 25, 18);
+
+INSERT INTO STARS_IN VALUES
+('Teddy Daniels', 11, 19);
+
+INSERT INTO STARS_IN VALUES
+('Chuck Aule', 26, 19);
+
+insert into stars_in values
+('Buddy', 27, 20);
 
 -- Director
 --------------------------------------------------
@@ -277,6 +306,12 @@ insert into director values
 
 insert into director values
 (10, 'Martin Scorsese', '1942-11-17');
+
+insert into director values
+(11, 'Frank Darabont', '1959-01-28');
+
+insert into director values
+(12, 'Jon Favreau', '1966-10-19');
 
 -- Directs
 --------------------------------------------------
@@ -330,6 +365,16 @@ insert into directs values
 
 insert into directs values
 (10, 17);
+
+insert into directs values
+(10, 19);
+
+insert into directs values
+(11, 18);
+
+insert into directs values
+(12, 20);
+
 -- Production Studio
 --------------------------------------------------
 insert into production_studio values
@@ -352,6 +397,12 @@ insert into production_studio values
 
 insert into production_studio values
 ('TriBeCa Productions', '375 Greenwich St., New York, New York', 'Jane Rosenthal');
+
+insert into production_studio values
+('Warner Bros Pictures', '4000 Warner Boulevard, Burbank, California', 'Josh Goldstine');
+
+insert into production_studio values
+('Paramount Pictures', '5555 Melrose Avenue, Hollywood, California', 'Brian Robbins');
 
 
 -- Produces
@@ -403,3 +454,15 @@ insert into produces values
 
 insert into produces values
 ('Hawk Films', 16);
+
+insert into produces values
+('Warner Bros Pictures', 18);
+
+insert into produces values
+('Warner Bros Pictures', 20);
+
+insert into produces values
+('Paramount Pictures', 17);
+
+insert into produces values
+('Paramount Pictures', 19);
