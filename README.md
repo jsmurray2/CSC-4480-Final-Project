@@ -102,7 +102,8 @@ WHERE DOB =
 Find all actors that acted in a movie that was produced by a studio where Stanley Kubrick was President
 ```
 SELECT a.name
-FROM (((ACTOR a JOIN STARS_IN s on a.actorid = s.actorid) join produces p on s.movieid = p.movie_id)
+FROM (((ACTOR a JOIN STARS_IN s on a.actorid = s.actorid)
+JOIN produces p on s.movieid = p.movie_id)
 JOIN production_studio d on d.name = p.studio_name)
 WHERE d.president = 'Stanley Kubrick'
 order by name asc;
