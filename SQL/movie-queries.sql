@@ -42,4 +42,27 @@ WHERE ADDRESS LIKE '%California';
 -- SELECT ACTORS BORN IN 1959
 SELECT NAME FROM ACTOR
 WHERE DOB LIKE '1959%';
-        
+
+-- LIST NUMBER OF MOVIES IN EACH GENRE
+SELECT GENRE,
+COUNT(*)
+FROM MOVIE
+GROUP BY GENRE;
+
+-- Find the oldest actor in the database
+SELECT NAME AS Oldest_Actor, DOB
+FROM ACTOR
+WHERE DOB = 
+(
+    SELECT MIN(DOB)
+    FROM ACTOR
+);
+
+-- Find the youngest director in the database
+SELECT NAME AS Youngest_Director, DOB
+FROM DIRECTOR
+WHERE DOB = 
+(
+    SELECT MAX(DOB)
+    FROM DIRECTOR
+);
