@@ -116,7 +116,7 @@ ORDER BY Studio_name;
 ```
 ![DISTINCT Operator Example](/images/DISTINCT_Operator_Query.png)
 
-### IN STatement Query
+### IN Statement Query
 List all movies with a specific actor
 ```
 SELECT TITLE FROM MOVIE
